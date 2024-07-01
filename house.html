@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Design</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #87CEEB;
+        }
+
+        .house {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: #FFD700;
+            border: 5px solid #8B4513;
+        }
+
+        .roof {
+            position: absolute;
+            top: -60px;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-left: 110px solid transparent;
+            border-right: 110px solid transparent;
+            border-bottom: 60px solid #8B0000;
+        }
+
+        .door {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 50px;
+            height: 80px;
+            background-color: #8B4513;
+            transform: translateX(-50%);
+        }
+
+        .window {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: #87CEEB;
+            border: 3px solid #8B4513;
+        }
+
+        .window.left {
+            top: 40px;
+            left: 20px;
+        }
+
+        .window.right {
+            top: 40px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="house">
+        <div class="roof"></div>
+        <div class="door"></div>
+        <div class="window left"></div>
+        <div class="window right"></div>
+    </div>
+</body>
+</html>

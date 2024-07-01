@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        
+        </head>
+
+<body>
+        <fieldset>
+        <legend> 
+                
+                
+                
+                student registration form:</legend>
+<form>
+<label for ="p">Full Name:</label><br>
+<input type="text" id="pp" required><br>
+
+<label for ="e">email:</label><br>
+<input type="email" id="e"   required><br><br>
+
+<label for ="ph">Phone number:</label><br>
+<input type="tel" id="ph" maxlength="10" minlength="10"  value="1234567890"   required><br><br>
+
+
+<label for ="dt">date of birth:</label><br>
+<input type="date" id="dt" required><br><br>
+<label> gender:</label><br>
+<label for="male">male</label>
+<input type="radio" name="btn" id="male">
+<label for="female">female</label>
+<input type="radio" name="btn" id="female" ><br><br>
+<label >Address:</label><br>
+<textarea col="20">
+</textarea><br><br>
+<label for "items">Education Level:</label><br>
+<select name="course" id="items">
+        <option >High school</option>
+        <option value=>graduation</option>
+        <option >PG</option>
+  </select><br>
+  <label>Interests:</label><br>
+<label for ="c">programming</label>
+<input type="checkbox" id="c" >
+<label for ="cc">Sports</label>
+<input type="checkbox" id="cc" >
+     
+<label for ="ccc">Music</label>
+<input type="checkbox" id="ccc" ><br><br>
+
+<label for ="ppp">Preferred Course:</label><br>
+<input type="text" id="ppp" required><BR>
+    <label>Resume(PDF only)</label><br>
+    <label for="f">choose file</label>
+    <input type="file" id="f" accept="application/pdf" name="myfile"><br><br>
+    <label>Programming Skills(1-10):</label><br>
+    <input type="range" id="b"  ><br>
+    <label for="cl" >Favorite color:</label><br>
+    <input type="color" id="cl" name="col"><br>
+
+
+<label for ="web">website:</label><br>
+<input type="url" id="web" name="website" required><br><br>
+
+<label for ="srch">search:</label><br>
+<input type="search" id="srch"  required><br>
+
+
+<label for ="pas"> password</label><br>
+<input type="password" id="pas" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="must contain at least one number and one uppercase and lowercase letter eight characters" size="60" required><BR>
+
+
+
+
+<input type="submit"  value="submit">
+<input type="reset"  value="Reset">
+
+</form>
+</fieldset>
+</body>
+</html>

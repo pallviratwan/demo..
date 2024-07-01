@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+          *{
+    margin: 1;
+    padding:1;
+    box-sizing: border-box;
+        }
+.main{
+    display: flex;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 700px;
+   
+    justify-content: space-around;  
+
+}
+
+ .list
+        {
+            list-style-type: none;
+
+        }
+        li{
+            display: inline;
+            margin: 7px;
+        }
+ span{
+    display: flex;
+    margin-top: 5px;
+    padding-left: 40px;
+   
+}
+.class1{
+    display: flex;
+    background-color: black;
+    margin-top: 6%;
+    margin-left: 3%;
+    border-radius: 20px;
+    height: 500px;
+   
+   
+
+}
+.class2{
+    padding-left: 35%;
+        
+}
+.class3{
+    color: white;
+    font-size: 3rem;
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 5%;
+    font-family: sans-serif
+    
+}
+.class4{
+    position: absolute;
+    color: white;
+    margin-top: 10%;
+    margin-left: 5%;
+    font-size: larger;
+    font-family: sans-serif
+}
+.class5{
+    position: absolute;
+    background-color: #428eff;
+    height: 50px;
+    width: 200px;
+    border-radius: 15px;
+    margin-top: 20%;
+    margin-left: 5%;
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center; 
+    padding: 10px;   
+}
+.class8{
+    display: flex;
+    height: 50%;
+    
+}
+.class9{
+ margin-top: 5%;
+ position: absolute;
+ margin-left: 10%;
+}
+.class11{
+    font-size: 2rem;
+    padding-left: 10%;
+    margin-top: 5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.class12{
+    font-size: 1.5rem;
+    margin-left: 1.5%;
+    margin-top: 12%;
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.class13{
+    font-size: 1.5rem;
+   border: 2px solid black;
+    margin-top: 22%;
+    position: absolute;
+    height: 60px;
+    width: 150px;
+   border-radius: 10px;
+  
+}
+.class13:hover{
+    cursor: pointer;
+    background-color: #428eff   ;
+}
+.tdiv{
+    border: 2px solid black ;
+    display: flex;
+    height: 460px;
+    width: 650px;
+    border-radius: 20px;
+    background-color: rgba(252, 246, 246, 0.916);
+}
+.tdiv1{
+    position: absolute;   
+    border: 2px solid black ;
+    height: 460px;
+    width: 650px;
+   
+    margin-left: 47%;
+    border-radius: 20px;
+    background-color: rgb(4, 120, 253);
+    
+}
+.classbox{
+    display: flex;
+    margin-top: 4%;
+    margin-left: 5%
+    ;
+}
+.class17{
+    position: absolute;
+    margin-left: 48%;
+    margin-top: 10%;
+   
+}
+.class14{
+    position: absolute;
+    font-size: 2.2rem;
+    padding-top: 35px;
+    padding-left: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.class15{
+    position: absolute;
+    padding-top: 120px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    padding-left: 25px;
+}
+.class16{
+    font-size: 25px;
+    position: absolute;
+    margin-top: 370px;
+    padding: 10px;
+    border: 2px solid black;
+    height: 50px;
+    border-radius: 10px;
+    margin-left: 30px;  
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.class16:hover{
+    cursor: pointer;
+    background-color: antiquewhite;
+}
+.con {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-gap: 30px;
+  grid-template-rows: 350px ;
+  margin-left: 8%;
+  
+}
+
+.items1:hover,.items2:hover,.items4:hover {
+  border: 2px solid black;
+  border-radius: 20px;
+  
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  flex: 1;
+  border-radius: 18px 18px 0 0; 
+  overflow: hidden; 
+}
+
+.image img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+}
+
+.text {
+  padding: 20px;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 30px;
+}
+.p{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 7%;
+
+}
+.p1{
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: ;
+}
+.p2{
+    padding-top: 20px;
+    font-size: large;
+}
+.container{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+}
+.pox, .pox1, .pox2, .pox3{
+   
+    padding:  10px;
+    
+}
+.pox:hover, .pox1:hover, .pox2:hover, .pox3:hover{
+    border: 2px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.skill{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 40px;
+}
+.s1{
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.s2{
+    padding-top: 25px;
+    font-size: larger;
+}
+.grow{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    
+}
+.h2, .h5,.h8{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    padding-top: 15px;
+}
+.h3, .h6,.h9{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    padding-top: 15px;
+}
+.sub, .sub1, .sub2{
+    background-color: rgb(224, 225, 226);
+    padding: 15px;
+    border-radius: 20px;
+    margin-left: 100px;
+    margin-right: 80px;
+}
+.sub:hover, .sub1:hover, .sub2:hover{
+    cursor: pointer;
+}
+.big{
+    display: flex;
+    margin-top: 70px;
+    background-color: rgb(34, 32, 32);
+    margin-left: 3%;
+    margin-right: 1.8%;
+    border-radius: 10px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+.small{
+    color: white;
+    position: absolute;
+    font-size: 80px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+.bottom{
+    padding-left: 30px;
+    display: flex;
+    margin-top: 70px;
+    
+   background-color: rgb(32, 30, 30);
+    color: rgb(255, 251, 251);
+    border: 50px solid rgb(30, 28, 28);
+    overflow: visible;
+    
+}
+.nav3{
+    display: flex;
+    justify-content: space-between  ;
+   
+ 
+}
+.svg{
+    display: flex;
+    padding-left: 400px;
+}
+.fun1{
+    font-size: 20px;
+}
+ .fun2, .fun3, .fun4, .fun5, .fun6, .drop{
+   padding-left: 30px;
+   
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.fun2:hover, .fun3:hover, .fun4:hover, .fun5:hover, .fun6:hover, .drop:hover, .fun1:hover{
+    cursor: pointer;
+}
+.twi, .in, .gt, .sun, .tube{
+    padding-left: 20px;
+    font-size: larger;
+}
+.twi:hover, .in:hover, .gt:hover, .sun:hover, .tube:hover{
+    cursor: pointer;}
+    </style>
+</head>
+<body>
+    <div>
+   <div class="main" >
+    <ul>
+        <li><img src="burger-menu.svg" width="30"></li>
+        <li><img src="https://io.google/2023/app/images/Logo.svg" alt=""></li>
+        <li>Watch</li>
+        <li>Learn</li>
+       <li>Community</li>
+        <li>About</li>
+    </ul>
+</div>
+    <div class="class1">
+        <div class="class7">
+            <div class="class3">That's a wrap on <br> Google I/O 2023</div>
+            <div class="class4">Catch up on announcement, deep-dives, and anything you may have missed.</div>
+            <div class="class5" >Watch the recaps</div>
+        <div class="class2"><img src="https://io.google/2023/app/images/wrap-hero-homepage.svg" alt="" height="400px" width="600px"></div>
+    </div>
+    </div>
+    </div>
+    <div class="classbox">
+    <div class="tdiv">
+    <div class="class8">
+        
+        <div class="class11"> <strong>
+            Connect with <br> developers</strong></div>
+        <div class="class12">
+            Join developer <br> communities around the <br> world for networking, <br> meetups, collaborations <br>and more. 
+            <div class="class13">
+                Find a <br>Community
+            </div></div>
+        <div class="class9">
+            <img src="https://io.google/2023/app/images/connect-developers-desktop-light.svg" alt="">
+        
+            </div>
+            </div>
+    </div>
+    <div class="tdiv1">
+        <div class="class14">Continue learning</div>
+        <div class="class15">Grow your skill around the <br>
+            Google technology you love</div>
+            <div class="class16">Browse Topics</div>
+       
+        
+      
+        <div class="class17">
+            <img src="https://io.google/2023/app/images/browse-topics.svg" alt="">
+        </div>
+        </div>
+    
+        </div>
+            
+       
+            <div class="con">
+              <div class="class items1">
+                <div class="grid-item">
+                  <div class="image"><img src="https://io.google/2023/app/images/recap-video-list.png" alt="Recap Video"></div>
+                  <div class="text">Watch the recap videos</div>
+                </div>
+              </div>
+              <div class="class items2">
+                <div class="grid-item">
+                  <div class="image"><img src="https://io.google/2023/data/im/396cd2d5-9fe1-4725-a3dc-c01bb2e2f38a.webp" alt="Image 2"></div>
+                  <div class="text">Google Keynote</div>
+                </div>
+              </div>
+              <div class="class items4">
+                <div class="grid-item">
+                  <div class="image"><img src="https://io.google/2023/data/im/9fe491dd-cadc-4e03-b084-f75e695993ea.webp" alt="Image 3"></div>
+                  <div class="text">Developer Keynote</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="p">
+                <div class="p1">What are you developing for?</div>
+                <div class="p2"><a href=""https://www.example.com" >View all content</a></div>
+            </div>
+            <div class="container"> 
+                <div class="pox">
+                    <div class="pix">
+                    <div class="pex">
+                        <div class="pic"><img src="https://io.google/2023/app/images/stacks_mobile-hover.svg" alt=""></div>
+                        <div class="pax"><h1>Mobile</h1> <br>
+                        Develop for a range of audiances and form factors.</div>
+                    </div>
+                    </div>
+                    </div>  
+                    <div class="pox1">
+                    <div class="pix1">
+                    <div class="pex1">
+                        <div class="pic1"><img src="https://io.google/2023/app/images/stacks_web-hover.svg" alt=""></div>
+                        <div class="pax1"><h1>Web</h1> <br>Create fast, secure sites and apps for the <br>open web</div>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="pox2">
+                        <div class="pix2">
+                        <div class="pex2">
+                            <div class="pic2"><img src="https://io.google/2023/app/images/stacks_ai.svg" alt=""></div>
+                            <div class="pax2"><h1>AI</h1> Bring the power of machine learning <br> to apps and workflows.</div>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="pox3">
+                    <div class="pix3">
+                    <div class="pex3">
+                        <div class="pic3"><img src="https://io.google/2023/app/images/stacks_cloud.svg" alt=""></div>
+                        <div class="pax3"><h1>Cloud</h1> Simplify and scale the <br>end to end development</div>
+                    </div>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+          
+
+            <div class="skill">
+                <div class="s1">Grow your skills</div>
+                <div class="s2"><a href="www.wifi.com">view all learning material</a></div>
+            </div>
+
+            <div class="grow">
+                <div class="sub">
+                <div class="sup">
+                <div class="suf">
+                    <div class="h1"><img src="https://io.google/2023/app/images/codelabs-icon.svg" alt=""></div>
+                    <div class="h2">Codelabs and pathways</div>
+                    <div class="h3">Start building today with self-placed coding <br> exercise</div>
+                </div>
+                </div>
+                </div>
+                <div class="sub1">
+                <div class="sup1">
+                <div class="suf1">
+                    <div class="h4"><img src="https://io.google/2023/app/images/workshops-icon.svg" alt=""></div>
+                    <div class="h5">Workshops</div>
+                    <div class="h6">Gain skills with guided codelabs led by <br> google experts</div>
+                </div>
+                </div>
+                </div>
+                <div class="sub2">
+                <div class="sup2">
+                <div class="suf2">
+                    <div class="h7"><img src="https://io.google/2023/app/images/demos-icon.svg" alt=""></div>
+                    <div class="h8">Product demos</div>
+                    <div class="h9">Discover how google's developer product work.</div>
+                </div>
+                </div>
+                </div>
+            </div>
+
+
+            <div class="big"> 
+               
+                 <img src="https://io.google/2023/app/images/seeyounextyear.svg" alt="">
+          
+                <div class="small">See you next year</div>
+            </div>
+
+
+            <div class="bottom">
+                <div class="nav2">
+                
+                <div class="nav3">
+                    <div class="fun1">Google</div>
+                    <div class="fun2">I/O 2022</div>
+                    <div class="fun3">I/O Puzzle</div>
+                    <div class="fun4">Privacy & terms</div>
+                    <div class="fun5">Community Guidelines</div>
+                    <div class="fun6">FAQ</div>
+                    <div class="drop">English </div>
+                    </div>
+                </div>
+                
+                <div class="svg">
+                
+                <div class="twi"><img src="https://io.google/2023/app/images/ic_twitter.svg" alt=""></div>
+                <div class="in"><img src="https://io.google/2023/app/images/ic_linkedin.svg" alt=""></div>
+                <div class="gt"><img src="https://io.google/2023/app/images/ic_googledev.svg" alt=""></div>
+                <div class="tube"><img src="https://io.google/2023/app/images/ic_youtube.svg" alt=""></div>
+                <div class="sun"><img src="https://io.google/2023/app/images/ic_darkmode.svg" alt=""></div>
+            </div>
+    
+       
+            </div>
+            
+</body>
+</html>

@@ -1,0 +1,32 @@
+// const fatherName = document.getElementById('fatherName').value;
+// const motherName = document.getElementById('motherName').value;
+// const email = document.getElementById('email').value;
+// const phoneNumber = document.getElementById('phoneNumber').value;
+// const dob = document.getElementById('dob').value;
+// const address = document.getElementById('address').value;
+// const gender = document.querySelector('input[name="gender"]:checked').value;
+// const country = document.getElementById('country').value;
+// var inss="";
+// var sports=document.getElementById("sports").checked;
+// var music=document.getElementById("music").checked;
+// if(sports)
+// inss="sports";
+// if(music)
+// inss+="music";
+
+// Open new window and display the data
+
+// newWindow.document.write('<html><head><title>Form Data</title></head><body>');
+// newWindow.document.write('<h2>Personal Information</h2>');
+// newWindow.document.write(`<p><strong>Name:</strong>  ${fullName} </p>`);
+// newWindow.document.write('<p><strong>Father\'s Name:</strong> ' + fatherName + '</p>');
+// newWindow.document.write('<p><strong>Mother\'s Name:</strong> ' + motherName + '</p>');
+// newWindow.document.write('<p><strong>Email:</strong> ' + email + '</p>');
+// newWindow.document.write('<p><strong>Phone Number:</strong> ' + phoneNumber + '</p>');
+// newWindow.document.write('<p><strong>Date of Birth:</strong> ' + dob + '</p>');
+// newWindow.document.write('<p><strong>Address:</strong> ' + address + '</p>');
+// newWindow.document.write('<p><strong>Gender:</strong> ' + gender + '</p>');
+// newWindow.document.write('<p><strong>Country:</strong> ' + country + '</p>');
+//  newWindow.document.write('<p><strong>Interests:</strong> ' + interests.join(', ') + '</p>');
+// newWindow.document.write('</body></html>');
+

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+        .login{
+            border: 2px solid black;
+            width: 400px;
+            height: 500px;
+            background: url('1.jpg' );
+            color: white;
+            border-radius: 40px;
+            box-shadow: 0px 0px 20px rgba(red, green, blue, alpha);
+        background-position: center;
+        overflow: hidden;
+
+        }
+        form{
+            display: block;
+            box-sizing: border-box;
+            padding: 40px;
+            width: 100px;
+            height: 100px;
+            flex-direction: column;
+    
+        }
+        h1{
+            font-weight: normal;
+            font-size: 24px;
+         text-shadow:0px 0px 2px rgba(red, green, blue, alpha) ;
+margin-bottom: 60px;
+        
+        
+}
+lable{
+    color: rgba(red, green, blue, alpha);
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: 2px;
+    padding-left: 10px;
+;
+}
+input{
+    background: rgba(red, green, blue, alpha);
+height: 40px;
+left: 40px;
+border-radius: 20px;
+padding: 0px 20px;
+border: none;
+margin-bottom: 20px;
+
+}
+button{
+    background: solid black;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 40px;
+    border: none;
+    margin: 10px 0px;
+    box-shadow: 0px 0px 5px rgba(red, green, blue, alpha);
+   color: rebeccapurple;
+   
+
+}
+    </style>
+    
+    <div class="login">
+        <form>
+            <h2>log in</h2>
+            <label>Email </label>
+            <input type="text"id="t"> <br>
+            <br>
+            <label>password</label>
+            <input type="password" id="p">
+            <br>
+            <br>
+            <input type="button" value="sumbit" id="sh" onclick="match()">
+            <input type="button" value="Reset" id="re" onclick="reset()">
+        </form>
+    </div>
+    <script>
+
+        var t,p,sh,re;
+        
+function match()
+{
+    t=document.getElementById("t").value;
+    p=document.getElementById("p").value;
+    if(t=="suryanshdhiman052@gmail.com" && p=="1234")
+    {
+        alert("log in sucessfuly")
+        return true;
+    }
+else
+{
+    alert("incorrect password or user name")
+    return false;
+}
+}
+    </script>
+</body>
+</html>

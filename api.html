@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table{
+        border-collapse: collapse;
+        background-color: lightgray ;
+    }
+   td{
+    border: 2px solid black;
+   }
+</style>
+<body>
+    <select id="choose" onchange="updatenumber()">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select>
+<table border="5px" id="producttable"> 
+    <caption>Product Data</caption>
+    <tr>
+        <td>ID</td>
+        <TD>Title</TD>
+        <td >Description</td>
+        <td>price</td>
+        <td>Discount Percentage</td>
+        <td>Rating </td>
+        <td>stock</td>
+        <td>Brand</td>
+        <td>Category</td>
+    </tr>
+</table>
+</body>
+<script>
+const tabledata=document.getElementById("producttable");
+const row=document.createElement("tr");
+
+function updatenumber()
+{
+
+fetch("https://dummyjson.com/products/"+choose.value)
+.then(response=>response.json())
+.then(data=> { 
+   row.innerHTML= `<td>${data.id}</td> 
+ <td>${data.title}</td>
+<td>${data.description}</td>
+<td>${data.price}</td>
+<td>${data.discountpercentage}</td>
+<td>${data.rating}</td>
+<td>${data.stock}</td>
+<td>${data.brand}</td>
+<td>${data.category.toUpperCase()}</td>`
+tabledata.appendChild(row)
+})
+}
+  
+</script>
+</html>

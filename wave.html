@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .center{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+    }
+    .wave{
+        width: 5px;
+        height: 100px;
+        background: linear-gradient(45deg,cyan,#fff);
+        margin: 10px;
+        animation: wave 1s linear infinite;
+        border-radius: 20px;
+    }
+    
+    .wave:nth-child(odd){
+        animation-delay : 0.1s;
+    }
+    .wave:nth-child(even){
+        animation-delay : 0.2s;
+    }
+    .wave:nth-child(odd){
+        animation-delay : 0.3s;
+    }
+    .wave:nth-child(even){
+        animation-delay : 0.4s;
+    }
+    .wave:nth-child(odd){
+        animation-delay : 0.5s;
+    }
+    .wave:nth-child(even){
+        animation-delay : 0.6s;
+    }
+    .wave:nth-child(odd){
+        animation-delay : 0.7s;
+    }
+    .wave:nth-child(even){
+        animation-delay : 0.8s;
+    }
+    .wave:nth-child(odd){
+        animation-delay : 0.9s;
+    }
+    @keyframes wave{
+        0%{transform: scale(o);}
+        50%{transform: scale(1);}
+        100%{transform: scale(0);}
+    }
+</style>
+<body>
+    {
+        margin:0px;
+        padding:0px;
+        box-sizing:border-box;
+    
+    }
+    <div class="center">
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    </div>
+</body>
+</html>

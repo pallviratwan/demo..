@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+.container
+{
+    background-color: aqua;
+    width:100vw;
+    height: 80vh;
+
+}
+.box
+{
+    width: 300px;
+    height: 300px;
+    background-color: wheat;
+  animation: myanimation 2s ease-in-out infinite alternate,
+  myanimation1 2s ease-in-out  infinite alternate;
+
+
+}
+  @keyframes myanimation {
+    from{
+        background-color:red;
+    }
+    to{
+background-color:green ;
+    }
+    
+  }
+  @keyframes myanimation1 {
+  0%{transform:  translateX(0px) rotate(72deg);
+    
+  }
+  20%{transform: translateX(60VW)  rotate(144deg);
+    
+}
+50%{transform: translateX(70VW)  rotate(216deg);
+    
+}
+80%{transform:  translateX(80VW) rotate(288deg);
+    
+}
+100% {transform: translate(100VW) rotate(360deg) ;   
+}
+  }
+
+</style>
+<body>
+   <div class="container">
+
+    <div class ="box"> hey i am box</div>
+   </div>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     table{
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+</style>
+<body>
+    <table border="2px" cellpadding="20" align="center">
+        <tr><td>
+            <h2 align="center"><strong>Marksheet</strong></h2>
+<lable >Enter Name &nbsp;  </lable>
+            <input type="text" id="name"><br><br>
+            <form>
+                <fieldset>
+                    <legend>Score</legend>
+                    <label>Physics</label>
+                    <input type="text" id="phy">&nbsp;
+                    <label>Chemistry</label>
+                    <input type="text" id="chem"><br><br>
+                    <label>Biology</label>
+                    <input type="text" id="bio">
+                </fieldset>
+            </form><br><br>
+            <label>Total</label>
+                    <input type="text" id="total">
+                    
+                    <label>Percentage</label> &nbsp;
+                    <input type="Number" id="Per">
+            </td></tr>
+
+
+
+            <tr><td>
+                <label>Convert to CGPA</label>
+                <input type="number" id="Convert">
+
+            </td></tr>
+            <tr>
+                <td align="center"> <input type="button" value="Submit"  onclick="show()"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="button" value="Reset" onclick="reset()">
+            </td></tr>
+    
+</body>
+<script>
+function show() 
+{
+    var p,c,b,total,per,convert;
+p=parseInt(document.getElementById("phy").value)
+c=parseInt(document.getElementById("chem").value)
+b=parseInt(document.getElementById("bio").value)
+total=p+c+b;
+document.getElementById("total").value=parseInt(total)
+per=(total)/3
+document.getElementById("per").value=parseFloat(per)
+}
+    </script>
+
+</html>

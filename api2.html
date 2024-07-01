@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   input[type="button"]:hover
+       {
+        background-color:red;
+       }
+       input[type="text"]:hover
+       {
+        background-color:antiquewhite;
+        color: red;
+       }
+     
+       form{
+        font-weight: bold;
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+       background-color:grey;
+       }
+   
+</style>
+<body>
+  <form align="center" id="mydata">
+    <fieldset>
+<legend>User Data</legend>
+    <label>ID</label>
+    <input type="text" id="id"><br><br>
+    <label>First Name</label>
+    <input type="text" id="fn"><br><br>
+    <label>Last Name</label>
+    <input type="text" id="ln"><br><br>
+    <label>Middle Name</label>
+    <input type="text" id="mn"><br><br>
+    <label>Age</label>
+    <input type="text" id="age"><br><br>
+    <label>GENDER</label><br>
+    <label for ="gender1">male</label>
+    <input type="radio" id="gender1" name="male" value="male">
+    <label for ="gender1">female</label>
+    <input type="radio" id="gender2" value="female"><br><br>
+    <label>Image</label>
+   <img src="" id="img"><br><br>
+   <input type="button" id="next" value="next" onclick="next( )">
+   <input type="button" id="prev" value="previous" onclick="previous()">
+
+   <div id="display"></div>
+</legend>
+
+    </fieldset>
+  </form>  
+</body>
+<script>
+const uid=document.getElementById("id");
+const fn=document.getElementById("fn");
+const ln=document.getElementById("ln");
+const mn=document.getElementById("mn");
+const age=document.getElementById("age");
+const gender1=document.getElementById("gender1");
+const gender2=document.getElementById("gender2");
+const img=document.getElementById("img");
+const data=document.getElementById("mydata");
+const row=document.createElement("tr");
+const userdetails=document.createElement("display")
+
+function next()
+{
+
+fetch("http://dummyjson.com/users"+next.value)
+.then(response=>response.json())
+.then(data=> { 
+   display.innerHTML= `<label>${data.id}</label> 
+   <label>${data.firstname}</label>
+   <label>${data.lastname}</label>  
+   <label>${data.maidenname}</label> 
+   <label>${data.age}</label> 
+   <label>${data.gender1}</label> 
+   <label>${data.gender2}</label> 
+   <label>${data.img}</label>`
+   mydata.appendChild(row)
+})
+}
+</script>
+</html>

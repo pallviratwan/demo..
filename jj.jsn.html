@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        
+        </head>
+<style>
+.col1 ,.col2
+{
+background-color:aqua;
+}
+</style>
+<body>
+        <fieldset>
+        <legend></legend>
+<form id="myForm">
+    <script>
+        const form=document.getElementById('myForm');
+        formDataToObject(FormData){
+            const jsonObject={};
+            for(const[key,value] of 
+                formData.entries()){
+                    jsonObject[key]=value;
+                }
+                return jsonObject;
+            
+        };
+form.addEventListener('submit',function(event)
+{
+    event.preventDefault();
+    const formData=new formDataToObject(formData);
+    const jsonString=
+    JSON.stringify(jsonObject);
+    const blob=new
+    Blob([jsonString],{type:'application/json'});
+    const link= document.createElement('a');
+    link.href=URL.createObjectURL(blob);
+    link.download='json-me-convert-hogya.json';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(link.href);
+
+});
+
+
+
+
+
+
+
+    </script>
+<label for ="p">First Name:</label><br>
+<input type="text" id="pp" required>
+<label for ="pp"> Middle Name:</label>
+<input type="text" id="pp" required><br>
+<label for ="ppp">Last Name:</label><br>
+<input type="text" id="ppp" required><BR>
+<label for ="a">Address:</label><br>
+<input type="text" id="a" size="60" required><br>
+<label for ="aa">city</label><br>
+<input type="text" id="aa" size="60" required><BR>
+
+<label for ="aaa">state:</label><br>
+<input type="text" id="aaa" required>
+<label for ="c">ZIP:</label>
+<input type="text" id="c"  required><br>
+<label for ="cc">Phone Number</label><br>
+<input type="text" id="cc"  size="60"required><br>
+<label for ="ccc">Comments</label><br>
+<textarea col="10">
+</textarea><br><br>
+
+
+<label for ="pas">passwords</label><br>
+<input type="password" id="pad"  size="60"   required><br><br>
+
+<label for ="e">email</label><br>
+<input type="email" id="e"  size="60"   required><br><br>
+
+<label for ="c">checkbox</label><br>
+<input type="checkbox" id="c"  size="60"  ><br><br>
+
+<label for ="n">number</label><br>
+<input type="number" id="n"  size="60"   required><br><br>
+
+<label for ="ph">phone number</label><br>
+<input type="tel" id="ph"  size="60"   required><br><br>
+<label for ="d">date</label><br>
+<input type="date" id="d"  pattern="[0-9]" size="60"   required><br><br>
+
+<label for ="dt">datetime</label><br>
+<input type="datetime-local" id="dt"  size="60"   required><br><br>
+<label for "items">course</label>
+<select name="course" id="items">
+        <option value="bca">bca</option>
+        <option value="ba">ba</option>
+        <option value="btech">btech</option>
+        <option value="bba">bba</option>
+     
+</select><br><br>
+
+ <br><br>
+
+<input type="reset" value="reset"  size="60" <br>
+
+<a href="link.html#about">link</a>
+
+<input type="submit" id="p" class="col1 " value="CLEAR">
+<input type="submit" id="p" class="col2" value="SUBMIT">
+</form>
+</fieldset>
+
+</body>
+</html>

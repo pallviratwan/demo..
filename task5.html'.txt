@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<body>
+<table border="2px" height="280" width="220">
+<thead>
+fruits
+<tr>
+</thead>
+
+
+
+
+
+</table>
+
+</body>
+</head>
+</html>

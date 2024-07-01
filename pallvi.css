@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+
+.d {
+box-sizing: boxborder;
+border:px;
+padding:0px;
+margin: 0px;
+border-color: blueviolet;
+}
+</style>
+<body>
+    <div class="d">hello this is .......</div>
+</body>
+</html>
